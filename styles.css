@@ -10,7 +10,7 @@
 }
 
 #welcome-section {
-	background: url("https://i.imgur.com/QEKb4ty.png") no-repeat;
+	background: url("https://res.cloudinary.com/demo/image/fetch/q_auto,f_auto/https://i.imgur.com/QEKb4ty.png") no-repeat;
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
