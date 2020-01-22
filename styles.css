@@ -1,6 +1,8 @@
+
 .container-fluid {
 	padding: 0;
-	
+/*	height: 100vh;
+	width: 100vw;*/
 }
 
 .img-fluid {
@@ -12,9 +14,9 @@
 #welcome-section {
 	background: url("https://res.cloudinary.com/odph-digiassets/image/fetch/q_auto,f_auto/https://i.imgur.com/QEKb4ty.png") no-repeat;
 	background-size: cover;
-	height: 100vh;
+	height: 30vh;
 	width: 100vw;
-	min-height: 650px;
+	min-height: 30vh;
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -26,7 +28,10 @@
 }
 
 .display-1 {
+	font-size: 3rem;
 	color: red;
+	border: solid red 2px;
+	padding: 10px;
 
 }
 
@@ -54,6 +59,7 @@
 						 ". pro3 ."
 						 ". pro4 ."
 						 ". pro5 .";
+	
 }
 
 	#proCard1 {
@@ -96,7 +102,7 @@
 		}
 
 #contact {
-	margin: 2rem auto;
+	margin: 1rem auto;
 }
 
 	#contact .header {
@@ -112,7 +118,7 @@
 	}
 
 	.contactForm {
-		width: 60%;
+		width: 80%;
     	margin: auto;
 	}
 
@@ -125,10 +131,21 @@
 	color: #f7f7f7;
 }	
 
-
+@media screen and (orientation: landscape) {
+	#welcome-section {
+		height: 100vh;
+	}
+}
 
 @media screen and (min-width: 750px) {
 
+	.display-1 {
+		font-size: 5rem;
+		
+		padding: 20px;
+	
+	}
+	
 	#projectCards {
 		width: 90%;		
 		grid-template-columns: 5% 35% 35% 5%;
@@ -140,4 +157,7 @@
 							 ". pro5 pro5 .";
 
 	}
+
+	.contactForm {
+		width: 60%;
 }
